@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat May  8 17:51:13 2021
 
-@author: USER
+@author: OMOLEWA JEREMIAH
 """
 import random 
 print("NAME: OMOLEWA JEREMIAH")
