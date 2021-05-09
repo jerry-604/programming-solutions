@@ -1,0 +1,88 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat May  8 17:51:13 2021
+
+@author: USER
+"""
+import random 
+print("NAME: OMOLEWA JEREMIAH")
+print(" ")
+print("2^K-1")
+print(" ")
+
+CA=0
+CB=0
+CC=0
+
+#DETERMINE THE VALUE OF K
+
+ka=1-1
+kb=2-1
+kc=3-1
+kd=4-1
+ke=5-1
+kf=6-1
+kg=7-1
+
+#2^K-1 are
+
+A=2**ka
+B=2**kb
+C=2**kc
+D=2**kd
+E=2**ke
+F=2**kf
+G=2**kg
+
+
+
+print(A,B,C,D,E,F,G)
+print(" ")
+
+#WHEN PICKED AT RANDOM THE SUM OF THE NUMBER HE CAN GET GREATER THAN 124 ARE ONLY 125 126 127
+
+FA=A+B+C+D+E+F+G
+FB=G+F+E+D+C+B
+FC=G+F+E+D+C+A
+
+LIST=[FA,FB,FC]
+
+R=random.choice(LIST)
+
+if R==FA:
+    CA=+1
+elif R==FB:
+    CB=+1
+else:
+    CC=+1
+print(R)
+print("")
+RA=random.choice(LIST)
+if RA==FA:
+    CA=+1
+elif RA==FB:
+    CB=+1
+else:
+    CC=+1
+print(RA)
+print("")
+RB=random.choice(LIST)
+if RB==FA:
+    CA=+1
+elif RB==FB:
+    CB=+1
+else:
+    CC=+1
+print(RB)
+
+LISTB=[CA,CB,CC]
+MAX=max(LISTB)
+
+print(" ")
+
+if MAX==CA:
+    print("127 is the most probable number")
+elif MAX==CB:
+    print("126 is the most probable number")
+else:
+    print("125 is the most probable number")

@@ -1,0 +1,329 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu May  6 10:16:18 2021
+
+@author: OMOLEWA JEREMIAH
+"""
+print("NAME: OMOLEWA JEREMIAH")
+print(" ")
+print("TIC-TAC-TOE")
+
+FPL=str(input("FIRST PLAYER X OR O--"))
+SPL=str(input("SECOND PLAYER X OR O--"))
+
+TL=" "
+TC=" " 
+TR=" " 
+ML=" "
+MC="X"
+MR=" "
+BL=" "
+BC=" "
+BR=" "
+
+A=0
+B=0
+C=0
+D=0
+E=0
+F=0
+G=0
+H=0
+I=0
+
+LIST=[A,B,C,D,E,F,G,H,I]
+
+while True:
+    print("")
+    print(TL,"!",TC,"!",TR)
+    print("----------")
+    print(ML,"!",MC,"!",MR)
+    print("----------")
+    print(BL,"!", BC ,"!",BR)
+    print("")
+    print(FPL,"ENTER POSITION")
+    positionA=str(input('TOP(A),MIDDLE(B),BOTTOM(C)--'))
+    positionB=str(input('LEFT(A),CENTER(B),RIGHT(C)--'))
+    if positionA=="A" and positionB=="A" and TL==" ":
+        A=1
+        TL=FPL
+    elif positionA=="A" and positionB=="B" and TC==" ":
+        B=1
+        TC=FPL
+    elif positionA=="A" and positionB=="C" and TR==" ":
+        C=1
+        TR=FPL
+    elif positionA=="B" and positionB=="A" and ML==" ":
+        D=1
+        ML=FPL
+    elif positionA=="B" and positionB=="B":
+        print("X has played there!!!")
+        break
+    elif positionA=="B" and positionB=="C" and MR==" ":
+        F=1
+        MR=FPL
+    elif positionA=="C" and positionB=="A" and BL==" ":
+        G=1
+        BL=FPL
+    elif positionA=="C" and positionB=="B" and BC==" ":
+        H=1
+        BC=FPL
+    elif positionA=="C" and positionB=="C" and BR==" ":
+        I=1
+        BR=FPL
+    else:
+        print(" ")
+        print("YOU ENTERED A WRONG INPUT!!(ENTER A,B OR C),  OR SECOND PLAYER AS PLAYED THERE!!!")
+        break
+    print("")
+    if A==1 and D==1 and G==1:
+        print(TL,"!",TC,"!",TR)
+        print("----------")
+        print(ML,"!",MC,"!",MR)
+        print("----------")
+        print(BL,"!", BC ,"!",BR)
+        print("")
+        print(FPL," WINS")
+        print("")
+        print("MERCI.") 
+        break
+    elif C==1 and F==1 and I==1:
+        print(TL,"!",TC,"!",TR)
+        print("----------")
+        print(ML,"!",MC,"!",MR)
+        print("----------")
+        print(BL,"!", BC ,"!",BR)
+        print("")
+        print(FPL," WINS")
+        print("")
+        print("MERCI.") 
+        break
+    elif A==1 and B==1 and C==1:
+        print(TL,"!",TC,"!",TR)
+        print("----------")
+        print(ML,"!",MC,"!",MR)
+        print("----------")
+        print(BL,"!", BC ,"!",BR)
+        print("")
+        print(FPL," WINS")
+        print("")
+        print("MERCI.")
+        break
+    elif G==1 and H==1 and I==1:
+        print(TL,"!",TC,"!",TR)
+        print("----------")
+        print(ML,"!",MC,"!",MR)
+        print("----------")
+        print(BL,"!", BC ,"!",BR)
+        print("")
+        print(FPL," WINS")
+        print("")
+        print("MERCI.") 
+        break
+    elif FPL=="X":
+        if B==1 and H==1:
+            print(TL,"!",TC,"!",TR)
+            print("----------")
+            print(ML,"!",MC,"!",MR)
+            print("----------")
+            print(BL,"!", BC ,"!",BR)
+            print("")
+            print(FPL," WINS")
+            print("")
+            print("MERCI.") 
+            break
+        elif C==1 and G==1:
+            print(TL,"!",TC,"!",TR)
+            print("----------")
+            print(ML,"!",MC,"!",MR)
+            print("----------")
+            print(BL,"!", BC ,"!",BR)
+            print("")
+            print("FIRST PLAYER WINS")
+            break
+        elif D==1 and F==1:
+            print(TL,"!",TC,"!",TR)
+            print("----------")
+            print(ML,"!",MC,"!",MR)
+            print("----------")
+            print(BL,"!", BC ,"!",BR)
+            print("")
+            print(FPL," WINS")
+            print("")
+            print("MERCI.")
+            break
+        elif A==1 and  I==1:
+            print(TL,"!",TC,"!",TR)
+            print("----------")
+            print(ML,"!",MC,"!",MR)
+            print("----------")
+            print(BL,"!", BC ,"!",BR)
+            print("")
+            print(FPL," WINS")
+            print("")
+            print("MERCI.")
+            break
+        else:
+            ("")
+    else:
+        (' ')
+    if  A>=1 and B>=1 and C>=1 and D>=1 and F>=1 and G>=1 and H>=1 and I>=1:
+        print(TL,"!",TC,"!",TR)
+        print("----------")
+        print(ML,"!",MC,"!",MR)
+        print("----------")
+        print(BL,"!", BC ,"!",BR)
+        print("")
+        print("IT'S A DRAW")
+        break
+    else:
+        ("")
+    print("")
+    print(TL,"!",TC,"!",TR)
+    print("----------")
+    print(ML,"!",MC,"!",MR)
+    print("----------")
+    print(BL,"!", BC ,"!",BR)
+    print("")
+    print(SPL,"ENTER POSITION")
+    positionD=str(input('TOP(A),MIDDLE(B),BOTTOM(C)--'))
+    positionE=str(input('LEFT(A),CENTER(B),RIGHT(C)--'))
+    
+    if positionD=="A" and positionE=="A" and TL==" ":
+        A=2
+        TL=SPL
+    elif positionD=="A" and positionE=="B" and TC==" ":
+        B=2
+        TC=SPL
+    elif positionD=="A" and positionE=="C" and TR==" ":
+        C=2
+        TR=SPL
+    elif positionD=="B" and positionE=="A" and ML==" ":
+        D=2
+        ML=SPL
+    elif positionD=="B" and positionE=="B":
+        print("X has played there!!!")
+        break
+    elif positionD=="B" and positionE=="C" and MR==" ":
+        F=2
+        MR=SPL
+    elif positionD=="C" and positionE=="A" and BL==" ":
+        G=2
+        BL=SPL
+    elif positionD=="C" and positionE=="B" and BC==" ":
+        H=2
+        BC=SPL
+    elif positionD=="C" and positionE=="C" and BR==" ":
+        I=2
+        BR=SPL
+    else:
+        print(" ")
+        print("YOU ENTERED A WRONG INPUT!!(ENTER A,B OR C),  OR SECOND PLAYER AS PLAYED THERE!!!")
+        break
+    print("")
+    if A==2 and D==2 and G==2:
+        print(TL,"!",TC,"!",TR)
+        print("----------")
+        print(ML, "!",MC,"!",MR)
+        print("----------")
+        print(BL,"!", BC ,"!",BR)
+        print("")
+        print(SPL," WINS")
+        print("")
+        print("MERCI.")
+        break
+    elif C==2 and F==2 and I==2:
+        print(TL,"!",TC,"!",TR)
+        print("----------")
+        print(ML,"!",MC,"!",MR)
+        print("----------")
+        print(BL,"!", BC ,"!",BR)
+        print("")
+        print(SPL," WINS")
+        print("")
+        print("MERCI.")
+        break
+    elif A==2 and B==2 and C==2:
+        print(TL,"!",TC,"!",TR)
+        print("----------")
+        print(ML,"!",MC,"!",MR)
+        print("----------")
+        print(BL,"!", BC ,"!",BR)
+        print("")
+        print(SPL," WINS")
+        print("")
+        print("MERCI.")
+        break
+    elif G==2 and H==2 and I==2:
+        print(TL,"!",TC,"!",TR)
+        print("----------")
+        print(ML,"!",MC,"!",MR)
+        print("----------")
+        print(BL,"!", BC ,"!",BR)
+        print("")
+        print(SPL," WINS")
+        print("")
+        print("MERCI.")
+        break
+    elif SPL=="X":
+        if B==2 and H==2:
+            print(TL,"!",TC,"!",TR)
+            print("----------")
+            print(ML,"!",MC,"!",MR)
+            print("----------")
+            print(BL,"!", BC ,"!",BR)
+            print("")
+            print(SPL," WINS")
+            print("")
+            print("MERCI.")
+            break
+        elif C==2 and G==2:
+            print(TL,"!",TC,"!",TR)
+            print("----------")
+            print(ML,"!",MC,"!",MR)
+            print("----------")
+            print(BL,"!", BC ,"!",BR)
+            print("")
+            print(SPL," WINS")
+            print("")
+            print("MERCI.")
+            break
+        elif D==2 and F==2:
+            print(TL,"!",TC,"!",TR)
+            print("----------")
+            print(ML,"!",MC,"!",MR)
+            print("----------")
+            print(BL,"!", BC ,"!",BR)
+            print("")
+            print(SPL,"WINS")
+            print("")
+            print("MERCI.")
+            break
+        elif A==2 and I==2:
+            print(TL,"!",TC,"!",TR)
+            print("----------")
+            print(ML,"!",MC,"!",MR)
+            print("----------")
+            print(BL,"!", BC ,"!",BR)
+            print("")
+            print(SPL,"WINS")
+            print("  ")
+            print("MERCI.")
+            break
+        else:
+            ("")
+    else:
+        (' ')
+    if  A>=1 and B>=1 and C>=1 and D>=1 and F>=1 and G>=1 and H>=1 and I>=1:
+        print(TL,"!",TC,"!",TR)
+        print("----------")
+        print(ML,"!",MC,"!",MR)
+        print("----------")
+        print(BL,"!", BC ,"!",BR)
+        print("")
+        print("IT'S A DRAW")
+        print("")
+        print("MERCI.")
+        break
+    else:
+        ("")
